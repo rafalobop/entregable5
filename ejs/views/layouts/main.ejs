@@ -1,0 +1,31 @@
+<html>
+
+<head>
+    <title>Entregable 5 - EJS</title>
+</head>
+
+<body>
+    <table>
+        <tr>
+            <th>Nombre</th>
+            <th>Precio</th>
+            <th>Imagen</th>
+        </tr>
+        <tr>
+            <% products.forEach((prod)=>{ %>
+                <td>
+                    <%= prod.title %>
+                </td>
+                <td>
+                    <%= prod.price %>
+                </td>
+                <td>
+                    <img src=<%= prod.thumbnail %> width="80" alt="prod">
+                </td>
+                <% }); %>
+        </tr>
+    </table>
+    <a href="/">Ir al formulario</a>
+</body>
+
+</html>

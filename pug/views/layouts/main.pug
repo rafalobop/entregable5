@@ -1,0 +1,16 @@
+extends index.pug
+
+block contenido
+    table 
+        tr 
+            th="Nombre"
+            th="Precio"
+            th="Imagen"
+        tr 
+            each prod in products 
+                td !{prod.title}
+                td !{prod.price} 
+                td !{prod.thumbnail}
+                    
+                            
+    a(href="/") Ir al formulario
